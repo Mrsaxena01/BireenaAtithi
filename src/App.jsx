@@ -17,6 +17,7 @@ import { ContactPage } from '@/pages/contact';
 import { NotFoundPage } from '@/pages/not-found';
 import { PageTransition } from '@/components/shared';
 import 'react-toastify/dist/ReactToastify.css';
+import { Analytics } from '@vercel/analytics/next';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -124,6 +125,7 @@ function App() {
         pauseOnHover
         theme="dark"
       />
+      <Analytics />
     </Router>
   );
 }
